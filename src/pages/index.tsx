@@ -11,12 +11,12 @@ const Home: React.FC = () => {
     setDevice([{id: 1, deviceName: navigator.platform}])
     const userAgent = navigator.userAgent;
     if(/android/i.test(userAgent)){
-      setDevice([{id: 1, deviceName: navigator.platform}])
+      setDevice([{id: 1, deviceName: 'Sou Android'}])
       return 'android';
     }
     if(/iPad|iPhone|iPod/i.test(userAgent)){
-      console.log('ios')
-        return <h1>IOS</h1>;
+      setDevice([{id: 1, deviceName: 'Sou Ios'}])
+        return 'ios';
     }
   }
 return (
