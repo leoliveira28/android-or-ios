@@ -11,11 +11,11 @@ const Home: React.FC = () => {
     const userAgent = navigator.userAgent;
     if(/android/i.test(userAgent)){
       console.log('android')
-        return 'android';
+        return <h1>Android</h1>;
     }
     if(/iPad|iPhone|iPod/i.test(userAgent)){
       console.log('ios')
-        return 'ios';
+        return <h1>IOS</h1>;
     }
   }
 return (
