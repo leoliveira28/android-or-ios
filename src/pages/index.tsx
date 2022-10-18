@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 
 import { useRouter } from 'next/dist/client/router'
+import { Container } from '../styles/pages/Home'
 
 const Home: React.FC = () => {
   const [device, setDevice] = useState([])
@@ -22,10 +23,10 @@ const Home: React.FC = () => {
   }
 return (
     <div>
+      <Container>
       <button onClick={androidOrIOS}>Clique aqui para testar</button>
-      {device.map(device =>
-        <h1>{device.deviceName}</h1>
-        )}
+      </Container>
+
     </div>
   )
 }

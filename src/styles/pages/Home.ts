@@ -20,4 +20,13 @@ export const Container = styled.div`
     font-size: 24px;
     line-height: 32px;
   }
+
+  button {
+    padding: 30px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+  }
 `
