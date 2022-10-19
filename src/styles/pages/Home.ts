@@ -3,16 +3,16 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  h1 {
-    font-size: 54px;
+
+  h3 {
+    font-size: 20px;
     color: ${props => props.theme.colors.primary};
-    margin-top: 40px;
+
   }
 
   p {
@@ -27,6 +27,15 @@ export const Container = styled.div`
     border: none;
     border-radius: 10px;
     cursor: pointer;
+
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
 
   }
 `
