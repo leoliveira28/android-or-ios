@@ -22,6 +22,7 @@ const Home: React.FC = () => {
           return 'ios';
       }
     }
+    androidOrIOS()
   }, [])
 
 
